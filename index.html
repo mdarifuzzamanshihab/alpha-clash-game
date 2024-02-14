@@ -97,27 +97,28 @@
             >
               Life
               <img src="./images/heart.svg" alt="" />
-              <span>1</span>
+              <span id="current-life">5</span>
             </button>
             <button
               class="btn border-0 rounded-full text-white bg-purple-600 px-4"
             >
               Score
               <img src="./images/dollar.svg" alt="" />
-              <span>1</span>
+              <span id="current-score">0</span>
             </button>
           </div>
         </div>
       </section>
       <!-- final score -->
-      <section
+      <section id="final-score"
         class="score flex justify-center items-center min-h-screen hidden"
       >
         <div
           class="text-white text-center space-y-5 bg-[#FFFFFF33] p-4 rounded-2xl"
         >
-          <h1 class="text-8xl"><span class="font-extrabold">Score:</span>14</h1>
-          <button class="btn">Play Again</button>
+        <h1 class="text-4xl">Game Over!</h1>
+          <h1 class="text-8xl"><span class="font-extrabold">Score:</span><span id="game-score">14</span></h1>
+          <button onclick="playAgain()" class="btn">Play Again</button>
           <p>Practice will make you Pro</p>
         </div>
       </section>

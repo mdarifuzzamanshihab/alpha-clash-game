@@ -12,6 +12,10 @@ function setHighlightColorById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add("bg-orange-400");
 }
+function removeHighlightColorById(elementID) {
+  const element = document.getElementById(elementID);
+  element.classList.remove("bg-orange-400");
+}
 
 function randomAlphabet() {
   //get a alphabet array
