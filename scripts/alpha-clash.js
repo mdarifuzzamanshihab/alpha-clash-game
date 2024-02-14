@@ -23,7 +23,11 @@ function continueGame() {
 function keypress(event) {
   const playerPressed = event.key;
   console.log('playerpress', playerPressed)
-  //stop game if player press escape
+  //start the game with enter button
+  if (playerPressed === 'Enter') {
+    play()
+  }
+  //stop  game if player press escape
   if (playerPressed === 'Escape') {
     gameOver()
   }
